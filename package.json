@@ -1,29 +1,28 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "tksh.io",
+  "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "date-fns": "^2.19.0",
-    "gray-matter": "^4.0.2",
-    "next": "^10.0.0",
-    "next-themes": "0.0.14",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-toggle": "^4.1.2",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1"
+    "@tailwindcss/postcss": "^4.2.2",
+    "gray-matter": "^4.0.3",
+    "next": "^16.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.4",
-    "@types/node": "^14.14.35",
-    "@types/react": "^17.0.3",
-    "add": "^2.0.6",
-    "typescript": "^4.2.3",
-    "yarn": "^1.22.10"
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "geist": "^1.7.0",
+    "typescript": "^6.0.2"
   }
 }
