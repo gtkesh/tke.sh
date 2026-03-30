@@ -20,20 +20,26 @@ export default function About() {
       <div className="space-y-3">
         <p>Hi, I&apos;m Gio.</p>
         <p>
-          Currently working on something in stealth. Before that spent 4
-          years at{" "}
-          <a href="https://pipe.com" className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
+          Currently working on something 🥷. Previously at {""}
+          <a
+            href="https://pipe.com"
+            className="underline underline-offset-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Pipe
           </a>{" "}
-          and 4 years at{" "}
-          <a href="https://plaid.com" className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
-            Plaid
+          &{" "}
+          <a
+            href="https://plaid.com"
+            className="underline underline-offset-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Plaid.
           </a>{" "}
-          in San Francisco — the time I cherish dearly.
         </p>
-        <p>
-          Stuck in between 🇬🇪 and 🇺🇸.
-        </p>
+        <p>Between 🇬🇪 & 🇺🇸</p>
       </div>
 
       <Cmd>cat links.txt</Cmd>
@@ -44,12 +50,15 @@ export default function About() {
           { label: "soundcloud", url: "https://soundcloud.com/gtkesh" },
         ].map(({ label, url }) => (
           <div key={label}>
-            <span className="text-[var(--color-fg-muted)] inline-block w-20">
-              {label}
-            </span>
-            <span className="text-[var(--color-fg-faint)]">→ </span>
-            <a href={url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
-              {url.replace("https://", "")}
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2"
+            >
+              <span className="text-[var(--color-fg-muted)] inline-block w-20">
+                {label}
+              </span>
             </a>
           </div>
         ))}

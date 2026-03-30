@@ -14,8 +14,11 @@ export function Nav() {
   return (
     <header>
       <div className="flex items-center justify-between">
-        <Link href="/" className="font-bold uppercase tracking-wider hover:text-[var(--color-accent)]">
-          TKE.SH
+        <Link
+          href="/"
+          className="font-bold uppercase tracking-wider hover:text-[var(--color-accent)]"
+        >
+          tke.sh
           <span
             className="inline-block w-[7px] h-[12px] bg-[var(--color-fg)] ml-0.5 align-middle"
             style={{ animation: "blink 1s infinite" }}
