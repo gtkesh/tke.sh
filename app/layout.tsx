@@ -4,7 +4,7 @@ import { Nav } from "@/components/nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "tksh.io",
+  title: "tke.sh",
   description: "Giorgi Tkeshelashvili — Software Engineer",
   icons: { icon: "/favicon.ico" },
 };
@@ -22,7 +22,7 @@ export default function RootLayout({
         <footer className="mt-20 mb-10 text-[var(--color-fg-faint)]">
           <div className="pt-6">~~~</div>
           <div className="mt-2">
-            tksh.io — {new Date().getFullYear()}
+            tke.sh — {new Date().getFullYear()}
           </div>
         </footer>
       </body>

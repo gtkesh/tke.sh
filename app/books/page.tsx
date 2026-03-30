@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { books } from "@/content/data/books";
 
 export const metadata: Metadata = {
-  title: "Books — tksh.io",
+  title: "Books — tke.sh",
 };
 
 const statusIcon = { reading: "●", read: "✓", want: "○" } as const;

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const { meta } = getPost(slug);
   return {
-    title: `${meta.title} — tksh.io`,
+    title: `${meta.title} — tke.sh`,
     description: meta.excerpt,
   };
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Posts — tksh.io",
+  title: "Posts — tke.sh",
 };
 
 export default function Posts() {
