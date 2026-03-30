@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 
-function Section({ command, children }: { command: string; children: React.ReactNode }) {
+function Section({
+  command,
+  children,
+}: {
+  command: string;
+  children: React.ReactNode;
+}) {
   return (
     <section className="mb-8">
       <div className="mb-1">
@@ -19,27 +25,34 @@ export default function Home() {
   return (
     <div>
       <Section command="whoami">
-        <div className="font-bold uppercase">Giorgi Tkeshelashvili</div>
-        <div className="text-[var(--color-fg-muted)]">Software Engineer</div>
+        <div className="font-bold ">Giorgi Tkeshelashvili</div>
       </Section>
 
       <Section command="cat intro.txt">
-        <p>Hi, I&apos;m Gio.</p>
-        <p className="mt-3">
-          Currently working on something in stealth. Before that spent 4
-          years at{" "}
-          <a href="https://pipe.com" className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
-            Pipe
-          </a>{" "}
-          and 4 years at{" "}
-          <a href="https://plaid.com" className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">
-            Plaid
-          </a>{" "}
-          in San Francisco — the time I cherish dearly.
-        </p>
-        <p className="mt-3">
-          Stuck in between 🇬🇪 and 🇺🇸.
-        </p>
+        <div className="space-y-3">
+          <p>Hi, I&apos;m Gio.</p>
+          <p>
+            Currently working on something 🥷. Previously at {""}
+            <a
+              href="https://pipe.com"
+              className="underline underline-offset-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pipe
+            </a>{" "}
+            &{" "}
+            <a
+              href="https://plaid.com"
+              className="underline underline-offset-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Plaid.
+            </a>{" "}
+          </p>
+          <p>Between 🇬🇪 & 🇺🇸</p>
+        </div>
       </Section>
 
       <Section command="ls recent-posts/">
